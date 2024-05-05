@@ -1,0 +1,442 @@
+:root {
+  --primary: #223f61;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* .main-container {
+  width: 996px;
+  margin: 0 auto;
+} */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #223f61;
+  min-height: 2000px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 7%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-nav a {
+  color: #223f61;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 0.8rem;
+}
+
+.navbar .navbar-nav a:hover {
+  font-weight: bold;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #223f61;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+  color: #223f61;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #8a9aac;
+}
+
+#hamburger-menu {
+  display: none;
+}
+/* navbar */
+
+/* hero section */
+.about .row {
+  display: flex;
+  align-items: center;
+}
+
+.about .row h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.about .row .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #223f61;
+  border-radius: 100px;
+}
+
+.about .row .cta:hover {
+  background-color: #8a9aac;
+  font-family: 'Montserrat';
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* about section */
+.about {
+  padding: 8rem 13% 1.4rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+}
+
+.about p {
+  padding-top: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.interest {
+  padding: 3rem 2rem;
+  background: #223f61;
+  border-radius: 15px;
+}
+
+.interest a {
+  color: #ffffff;
+}
+
+.interest h3 {
+  color: #fff7f2;
+  margin: 0.5rem 0;
+}
+
+.interest p {
+  color: #fff7f2;
+}
+/* about section */
+
+/* projects */
+.projects {
+  padding: 8rem 13% 1.4rem;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+}
+
+.projects h3 {
+  font-size: 1.6rem;
+}
+
+.projects .project-name {
+  padding-top: 4rem;
+}
+
+.projects .project-name p {
+  padding-top: 0.5rem;
+}
+
+.projects .project-name img {
+  width: 100%;
+  padding-top: 1rem;
+}
+/* projects */
+
+/* progress */
+.progress-grid {
+  padding: 6rem 13% 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.progress-grid h2 {
+  font-size: 2.5rem;
+}
+
+.progress-grid p {
+  padding-bottom: 1rem;
+}
+
+/* education */
+.education {
+  display: flex;
+  gap: 24px;
+  padding: 0 0 0 6px;
+}
+
+.education line {
+  padding: 0 0.7rem;
+}
+
+.education .line div {
+  width: 2px;
+  height: 100%;
+  background: #223f61;
+  position: relative;
+}
+
+.education-info {
+  margin: 0.3rem 0;
+}
+
+.education-date {
+  margin-bottom: 3rem;
+}
+
+.education .line div::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #223f61;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+/* experience */
+.experience {
+  display: flex;
+  gap: 24px;
+  padding: 0 0 0 6px;
+}
+
+.experience line {
+  padding: 0 0.7rem;
+}
+
+.experience .line div {
+  width: 2px;
+  height: 100%;
+  background: #223f61;
+  position: relative;
+}
+
+.experience-info {
+  margin: 0.3rem 0;
+}
+
+.experience-date {
+  margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #223f61;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+/* achievement */
+.achievement {
+  display: flex;
+  gap: 24px;
+  padding: 0 0 0 6px;
+}
+
+.achievement line {
+  padding: 0 0.7rem;
+}
+
+.achievement .line div {
+  width: 2px;
+  height: 100%;
+  background: #223f61;
+  position: relative;
+}
+
+.achievement-info {
+  margin: 0.3rem 0;
+}
+
+.achievement-date {
+  margin-bottom: 3rem;
+}
+
+.achievement .line div::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #223f61;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.expertise img {
+  width: 50%;
+}
+/* progress */
+
+/* contact */
+#contact {
+  padding: 8rem 13% 5rem;
+}
+
+#contact .main-container h2 {
+  font-size: 2.5rem;
+}
+
+.contact-form div {
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1.3rem;
+  font-family: sans-serif;
+  border: 1px solid #223f61;
+  border-radius: 15px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #223f61;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #223f61;
+}
+
+.btn-submit {
+  font-size: 1rem;
+  width: auto;
+  padding: 0.7rem 1.3rem;
+  background-color: #223f61;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Montserrat';
+}
+
+.btn-submit:hover {
+  background-color: #8a9aac;
+  font-family: 'Montserrat';
+}
+/* contact */
+
+/* footer */
+footer {
+  padding: 2rem 13% 1.4rem;
+  background: #223f61;
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+  color: #ffffff;
+}
+
+.footer-icons a:hover {
+  color: #8a9aac;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+/* media queries */
+/* Tablet */
+@media (max-width: 980px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #223f61;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #ffffff;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 55%;
+  }
+}
